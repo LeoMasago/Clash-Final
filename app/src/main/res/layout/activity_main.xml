@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/plano">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView4"
+        app:layout_constraintStart_toStartOf="@+id/scrollView4"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="NotSibling">
+
+        <ScrollView
+            android:id="@+id/scrollView4"
+            android:layout_width="406dp"
+            android:layout_height="647dp"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/menu"
+                    android:textAlignment="center"
+                    android:textColor="#38D90B"
+                    android:textSize="48sp" />
+
+                <Button
+                    android:id="@+id/btnvideo"
+                    android:layout_width="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/video"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/btnjogo"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/baixar"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Button
+                    android:id="@+id/btnsite"
+                    android:layout_width="200dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/site" />
+
+                <Button
+                    android:id="@+id/btncartas"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/cartas" />
+
+                <Button
+                    android:id="@+id/btncomuns"
+                    android:layout_width="200dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/comuns" />
+
+                <Button
+                    android:id="@+id/btnepicas"
+                    android:layout_width="200dp"
+                    android:layout_height="58dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/epicas" />
+
+                <Button
+                    android:id="@+id/btnlendarias"
+                    android:layout_width="200dp"
+                    android:layout_height="51dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/lendarias" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
